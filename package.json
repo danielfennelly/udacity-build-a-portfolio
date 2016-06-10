@@ -1,0 +1,22 @@
+{
+  "name": "udacity-portfolio-project",
+  "version": "1.0.0",
+  "description": "a simple portfolio website as an exercise in web development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielfennelly/udacity-build-a-portfolio.git"
+  },
+  "author": "daniel-fennelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielfennelly/udacity-build-a-portfolio/issues"
+  },
+  "homepage": "https://github.com/danielfennelly/udacity-build-a-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
