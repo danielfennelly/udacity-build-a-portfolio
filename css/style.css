@@ -1,6 +1,9 @@
 body {
 	font-family: 'Lato', sans-serif;
 	color: #2d3c49;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 img {
@@ -8,31 +11,86 @@ img {
 }
 
 h1 {
+	text-transform: uppercase;
 	font-weight: 100;
+	font-size: 32pt;
 }
 
 h2 {
-	font-weight: 100;
+	font-weight: 300;
+	color: #7d97ad;
 }
 
 h3 {
-	color: #7d97ad
+	color: #2d3c49;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 24pt;
 }
 
-hr {
-	border-color: #7d97ad;
-	border-width: 2px;
-	margin-top: 0;
+h4 {
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+/* Header Styling */
+
+.header {
+	display: flex;
+	border-bottom: 2px solid #7d97ad;
+}
+
+.logo {
+	width: 50%;
 }
 
 .logo img {
+	max-width: 100%;
 	max-height: 100px;
 }
 
+.name-and-title {
+	width: 50%;
+	text-align: right;
+}
+
+/* Splash Styling */
+
 .splash {
-	width: 100vw;
-	height: 42vw;
-	background-image: url('../images/cliffs-of-moher.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+	margin-top: 1.5em;
+}
+
+/* Carousel Styling */
+
+.carousel {
+	display: flex;
+	flex-wrap: wrap;
+	position: center;
+}
+
+.tile {
+	width: 250px;
+	text-align: center;
+	position: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.tile a {
+	color: black;
+	text-decoration: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 300px) {
+	.logo {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 301px) {
+	.logo {
+		display: block;
+	}
 }
