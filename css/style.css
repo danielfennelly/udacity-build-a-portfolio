@@ -19,6 +19,7 @@ h1 {
 h2 {
 	font-weight: 300;
 	color: #7d97ad;
+	font-size: 24pt;
 }
 
 h3 {
@@ -26,11 +27,17 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 24pt;
+	margin-bottom: 0;
 }
 
 h4 {
 	text-transform: uppercase;
 	font-weight: 100;
+}
+
+p {
+	margin-top: 0;
+	font-size: smaller;
 }
 
 /* Header Styling */
@@ -42,16 +49,25 @@ h4 {
 
 .logo {
 	width: 50%;
+	max-height: 100%;
 }
 
 .logo img {
 	max-width: 100%;
-	max-height: 100px;
+	height: 125px;
 }
 
 .name-and-title {
 	width: 50%;
 	text-align: right;
+}
+
+.name-and-title h1 {
+	margin-bottom: 0;
+}
+
+.name-and-title h4 {
+	margin-top: 0;
 }
 
 /* Splash Styling */
@@ -61,6 +77,11 @@ h4 {
 }
 
 /* Carousel Styling */
+
+.carousel-header h2 {
+	margin-bottom: 0.5em;
+	padding-left: 0.5em;
+}
 
 .carousel {
 	display: flex;
@@ -83,14 +104,32 @@ h4 {
 
 /* Media Queries */
 
+/* Breakpoint at 300px */
+
 @media only screen and (max-width: 300px) {
 	.logo {
 		display: none;
+	}
+
+	.name-and-title {
+		text-align: left;
 	}
 }
 
 @media only screen and (min-width: 301px) {
 	.logo {
 		display: block;
+	}
+}
+
+/* Breakpoint at 750px */
+
+@media only screen and (min-width: 750px) {
+	.tile:last-of-type {
+		margin-right: 0;
+	}
+
+	.tile:first-of-type {
+		margin-left: 0;
 	}
 }
