@@ -9,48 +9,63 @@
 	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-	<div class='container-fluid'>
-
-		<!-- HEADER -->
-		<div class='row header'>
-			<div class='logo'>
-				<img src='images/udacity-logo.svg'>
-			</div>
-			<div class='name-and-title'>
-				<h1 class='light-uppercase'>Jane Doette</h1>
-				<h4 class='light-uppercase'>Front-end Ninja</h4>
-			</div>
+	<!-- HEADER -->
+	<header>
+		<div class='logo'>
+			<img src='img/udacity-logo.svg'>
 		</div>
-
-		<!-- SPLASH IMAGE -->
-		<div class='row splash'>
-			<img src="http://placehold.it/800x300">
-			<!-- <img class='img-responsive' src="images/cliffs-of-moher.jpg"> -->
+		<div class='name-and-title'>
+			<h1 class='light-uppercase'>Jane Doette</h1>
+			<h4 class='light-uppercase'>Front-end Ninja</h4>
 		</div>
+	</header>
 
-		<!-- FEATURED WORK HEADING -->
-		<div class='row carousel-header'>
-			<h2>Featured Work</h2>
-		</div>
+	<!-- SPLASH IMAGE -->
+	<section class='splash'>
+		<img src = "img/cliffs-of-moher-cropped-800px.jpg"
+			 srcset = "
+			 	img/cliffs-of-moher-cropped-1600px.jpg 1600w,	
+			 	img/cliffs-of-moher-cropped-800px.jpg 800w,
+			 	img/cliffs-of-moher-cropped-400px.jpg 400w"
+			 sizes = "(max-width: 800px): 100vw"
+			 alt = "Ireland's cliffs of Moher">
+	</section>
 
-		<!-- WORK TILES -->
-		<div class='row carousel'>
-			<div class='tile'>
-				<img src="http://placehold.it/250x150">
-				<h3>Appify</h3>
-				<p><a href='https://github.com/udacity/Appify'>https://github.com/udacity/Appify</a></p>
-			</div>
-			<div class='tile'>
-				<img src="http://placehold.it/250x150">
-				<h3>Sunflower</h3>
-				<p><a href='https://github.com/udacity/Sunflower'>https://github.com/udacity/Sunflower</a></p>
-			</div>
-			<div class='tile'>
-				<img src="http://placehold.it/250x150">
-				<h3>Bokeh</h3>
-				<p><a href='https://github.com/udacity/Bokeh'>https://github.com/udacity/Bokeh</a></p>
-			</div>
+	<!-- FEATURED WORK HEADING -->
+	<section class='carousel-header'>
+		<h2>Featured Work</h2>
+	</section>
+
+	<!-- WORK TILES -->
+	<section class='carousel'>
+		<div class='tile'>
+			<img src = "img/ice-cave-iceland-cropped-250px.jpg"
+			     srcset = "
+			     	img/ice-cave-iceland-cropped-500px.jpg 500w,
+			     	img/ice-cave-iceland-cropped-250px.jpg 250w"
+			     sizes = "(max-width: 800px): 30vw"
+			     alt = "An ice cave tunnel in Iceland">
+			<h3>Appify</h3>
+			<p><a href='https://github.com/udacity/Appify'>https://github.com/udacity/Appify</a></p>
 		</div>
-	</div>
+		<div class='tile'>
+			<img src = "img/north-coyote-buttes-cropped-250px.jpg"
+				 srcset = "
+				 	img/north-coyote-buttes-cropped-500px.jpg 500w,
+				 	img/north-coyote-buttes-cropped-250px.jpg 250w"
+				 alt = "Arizona's North Coyote Buttes at nighttime">
+			<h3>Sunflower</h3>
+			<p><a href='https://github.com/udacity/Sunflower'>https://github.com/udacity/Sunflower</a></p>
+		</div>
+		<div class='tile'>
+			<img src = "img/proxy-falls-cropped-250px.jpg"
+				 srcset = "
+				 	img/proxy-falls-cropped-500px.jpg 500w,
+				 	img/proxy-falls-cropped-250px.jpg 250w"
+				 alt = "A close-up of Oregon's Proxy Falls">
+			<h3>Bokeh</h3>
+			<p><a href='https://github.com/udacity/Bokeh'>https://github.com/udacity/Bokeh</a></p>
+		</div>
+	</section>
 </body>
 </html>

@@ -42,7 +42,7 @@ p {
 
 /* Header Styling */
 
-.header {
+header {
 	display: flex;
 	border-bottom: 2px solid #7d97ad;
 }
@@ -102,29 +102,13 @@ p {
 	text-decoration: none;
 }
 
-/* Media Queries */
+/* Breakpoint at 775px */
+/* NB: One might expect to use 750px, but Firefox and Chrome display weird 
+   rendering behavior with this value. Using 775px leads to a cleaner jump
+   to the stacked and centered flexbox look between the columnar and row layouts.
+ */
 
-/* Breakpoint at 300px */
-
-@media only screen and (max-width: 300px) {
-	.logo {
-		display: none;
-	}
-
-	.name-and-title {
-		text-align: left;
-	}
-}
-
-@media only screen and (min-width: 301px) {
-	.logo {
-		display: block;
-	}
-}
-
-/* Breakpoint at 750px */
-
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 775px) {
 	.tile:last-of-type {
 		margin-right: 0;
 	}
